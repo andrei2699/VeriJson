@@ -51,27 +51,5 @@ public class MyTests
 
         json.Should().BeEquivalentTo(json2)
     }
-    
-    [Fact]
-    public void SimpleJsonObject_Should_PassAssertions()
-    {
-        string json = @"{""name"":""Widget"", ""id"":123, ""active"":true}";
-
-        json.Should().BeJsonObject()
-            .And.HaveProperty("name").EqualTo("Widget")
-            .And.HaveProperty("id").EqualTo(123)
-            .And.HaveProperty("active").AsBoolean(b => b.BeTrue());
-    }
-
-    [Fact]
-    public void SimpleJsonArray_Should_PassAssertions()
-    {
-        string json = @"[""apple"", ""banana""]";
-        JsonElement jsonElement = JsonDocument.Parse(json).RootElement;
-
-        jsonElement.Should().BeJsonArray()
-            .And.HaveCount(2)
-            .And.Contain("apple");
-    }
 }
 ```
