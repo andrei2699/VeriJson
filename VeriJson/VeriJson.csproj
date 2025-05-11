@@ -3,5 +3,22 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>VeriJson</PackageId>
+    <Description>A .NET library designed to make asserting JSON objects in your tests simple, intuitive, and highly readable. Using a fluent API, VeriJson leverages System.Text.Json to provide powerful and flexible assertions for your .NET applications.</Description>
+    <PackageReleaseNotes>ReleaseNotes.md</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/andrei2699/VeriJson/tree/main</PackageProjectUrl>
+    <PackageTags>json, json-assertion, unit-testing</PackageTags>
+    <RepositoryUrl>https://github.com/andrei2699/VeriJson</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Version>1.0.0</Version>
+    <Authors>Andrei Timar</Authors>
+    <Copyright>Copyright © 2025 Andrei Timar</Copyright>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="../ReleaseNotes/1.0.0.md" Pack="true" PackagePath="ReleaseNotes.md" />
+    <None Include="../README.md" Pack="true" PackagePath="" />
+    <None Include="../LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>
